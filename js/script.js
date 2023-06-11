@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('.jquery-background-video').bgVideo({fadeIn: 2000});
   //loader
   setTimeout(function () {
     $(".loader").fadeOut(1000);
@@ -154,14 +155,14 @@ $(document).ready(function () {
       });
     }
   });
-  $(function () {
-    $(".single-product .img-responsive").jqZoom({
-      selectorWidth: 30,
-      selectorHeight: 30,
-      viewerWidth: "100%",
-      viewerHeight: 400,
-    });
-  });
+  // $(function () {
+  //   $(".single-product .img-responsive").jqZoom({
+  //     selectorWidth: 30,
+  //     selectorHeight: 30,
+  //     viewerWidth: "100%",
+  //     viewerHeight: 400,
+  //   });
+  // });
 
   $(".add-address").click(function () {
     if ($(".form-address").css("display") == "block") {
@@ -204,5 +205,4 @@ $(document).ready(function () {
   }
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-  AOS.init();
 });
