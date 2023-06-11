@@ -142,7 +142,6 @@ $(document).ready(function () {
       100
     );
   });
-<<<<<<< HEAD
 
   $(function () {
     let image_small = document.querySelectorAll(".images-view img");
@@ -207,7 +206,4 @@ $(document).ready(function () {
   }
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-=======
-AOS.init();
->>>>>>> 9e24643c37f856cd02cef155329db2f388438807
 });
