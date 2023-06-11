@@ -27,7 +27,7 @@ html {
 body {
   overflow-x: hidden;
   direction: rtl;
-  background: #fcfcfc;
+  background: #FDFFFD !important;
 }
 html,
 body,
@@ -163,12 +163,10 @@ svg {
   background-color: var(--main-color);
 }
 .cut-text {
-  text-overflow: unset;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: nowrap;
-  margin: 0%;
 }
-
 #scroll-top {
   position: fixed;
   bottom: 60px;

@@ -5,11 +5,12 @@ $(document).ready(function () {
     $(".loader").fadeOut(1000);
   }, 2000);
 
-  $(".customer .owl-carousel").owlCarousel({
+  $(".rev-client .owl-carousel").owlCarousel({
     loop: true,
     nav: true,
     rtl: true,
     margin: 10,
+    nav: true,
     responsive: {
       0: {
         items: 1,
@@ -141,6 +142,7 @@ $(document).ready(function () {
       100
     );
   });
+<<<<<<< HEAD
 
   $(function () {
     let image_small = document.querySelectorAll(".images-view img");
@@ -205,4 +207,7 @@ $(document).ready(function () {
   }
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+=======
+AOS.init();
+>>>>>>> 9e24643c37f856cd02cef155329db2f388438807
 });
