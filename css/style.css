@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #0050A3;
+  --white: #fff;
+  --black: #000000;
+  --secon-color: #078998;
+  --gray-color: #2a2a2a;
+  --text-color: #b1b1b1;
+}
+
+* {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  direction: rtl;
+  background: #fcfcfc;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: middle;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.form-control,
+.form-control:focus {
+  padding: 1rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 8px;
+  box-shadow: none;
+  outline: 0;
+  margin: 1.5rem 0;
+}
+img {
+  width: 100%;
+}
+i,
+svg {
+  line-height: 0;
+}
+
+.btn,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+.cut-text {
+  text-overflow: unset;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0%;
+}
+
+#scroll-top {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: var(--main-color);
+  font-size: 22px;
+  line-height: 2px;
+  vertical-align: middle;
+  z-index: 98;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+#scroll-top.show {
+  visibility: visible;
+}
+
+a.link {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 99 !important;
+  color: transparent !important;
+  background: transparent !important;
+}
