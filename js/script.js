@@ -1,5 +1,22 @@
 $(document).ready(function () {
   $('.jquery-background-video').bgVideo({fadeIn: 2000});
+
+var navbar = document.getElementsByTagName("nav");
+var sticky = navbar[0].offsetHeight ;
+
+
+// make nav bar static on scroll 
+window.addEventListener("scroll" , function(){
+    if (this.document.documentElement.scrollTop >= sticky) {
+        // $(navbar).css("position", "fixed");
+        $(navbar).css("background" , "#fff");
+    } else {
+        // $(navbar).removeClass("bg-main-color")
+        $(navbar).css("background" , "transparent");
+        // $(navbar).css("position", "sticky");
+    }
+})
+
   //loader
   setTimeout(function () {
     $(".loader").fadeOut(1000);
@@ -23,82 +40,25 @@ $(document).ready(function () {
       },
     },
   });
-  $(".partners .owl-carousel").owlCarousel({
+  $('.partners .owl-carousel').owlCarousel({
+    center: true,
     loop: true,
-    nav: true,
+    nav: false,
     rtl: true,
-    margin: 10,
-    items: 6,
+    margin: 50,
     responsive: {
       0: {
-        items: 2,
-      },
-      600: {
         items: 3,
       },
-      900: {
+      1000: {
         items: 4,
       },
-      1000: {
-        items: 6,
-      },
-    },
-  });
-  $(".carousel-compare.owl-carousel").owlCarousel({
-    loop: true,
-    margin: 5,
-    nav: false,
-    rtl: true,
-    responsive: {
-      200: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      800: {
-        items: 2,
-      },
       1200: {
-        items: 2.2,
-      },
+        items: 5,
+      }
     },
   });
-  
-  $(".offers-finall .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 5,
-    nav: false,
-    rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1.5,
-      },
-      600: {
-        items: 2.2,
-      },
-      800: {
-        items: 3,
-      },
 
-      1000: {
-        items: 3.4,
-      },
-      1100: {
-        items: 3.9,
-      },
-
-      1200: {
-        items: 4.5,
-      },
-    },
-  });
   // search sub menu
   $(".top-nav-search .open-search").click(function (event) {
     event.stopPropagation();
@@ -143,67 +103,6 @@ $(document).ready(function () {
     );
   });
 
-  $(function () {
-    let image_small = document.querySelectorAll(".images-view img");
-    let image_large = document.querySelector(".img-responsive");
-    for (let i = 0; i < image_small.length; i++) {
-      image_small[i].addEventListener("click", function () {
-        image_large.src = image_small[i].src;
-        let viewer = document.querySelectorAll(".viewer-box img");
-        for (let j = 0; j < viewer.length; j++) {
-          viewer[j].src = image_large.src;
-        }
-      });
-    }
-  });
-  // $(function () {
-  //   $(".single-product .img-responsive").jqZoom({
-  //     selectorWidth: 30,
-  //     selectorHeight: 30,
-  //     viewerWidth: "100%",
-  //     viewerHeight: 400,
-  //   });
-  // });
+  $('select').niceSelect();
 
-  $(".add-address").click(function () {
-    if ($(".form-address").css("display") == "block") {
-      $(".form-address").hide();
-    } else {
-      $(".form-address").show();
-    }
-  });
-  $(".input-cridet").hide();
-
-  $('input[type="radio"]').change(function () {
-    if ($(".lable-cridet").is(":checked")) {
-      $(".input-cridet").show();
-    } else {
-      $(".input-cridet").hide();
-    }
-  });
-
-  if ($(".product-quantity").length > 0) {
-    $(".quantity.plus").click(function (e) {
-      let $input = $(this).next("input.qty");
-      let val = parseInt($input.val());
-      $input.val(val + 1).change();
-      $input.value = $input.val(val + 1).change();
-      // let inputsvalue=$input.value
-      // for (let i = 0; i <  inputsvalue.length; i++) {
-      //   let changevalueelement=$(".value-output").val();
-      //   inputsvalue[i].value=changevalueelement;
-      // }
-    });
-
-    $(".quantity.minus").click(function (e) {
-      let $input = $(this).prev("input.qty");
-      var val = parseInt($input.val());
-      if (val > 1) {
-        $input.val(val - 1).change();
-      }
-      console.log(val);
-    });
-  }
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });
