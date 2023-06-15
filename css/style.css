@@ -28,7 +28,11 @@ body {
   overflow-x: hidden;
   direction: rtl;
   /* background: #020204; */
+<<<<<<< HEAD
   background-color:#FCFFFF!important;
+=======
+  background-color: #FCFFFF !important;
+>>>>>>> fba4bcb0a895372a6d38569fe5297f2026e3c70b
   background-image: url('../images/bg-effect.svg') !important;
   /* background: url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg) !important; */
   animation: stars 90s linear;
@@ -115,7 +119,7 @@ video {
   outline: 0;
   vertical-align: middle;
   background: transparent;
-  color: #fff;
+  /* color: #fff; */
 }
 
 article,
@@ -546,6 +550,15 @@ header .video-hero--content {
   width: 60%;
   max-width: 960px;
 }
+@media (max-width : 578px){
+  header .video-hero--content {
+    width: 96%;
+    right: 2%;
+  }
+  header .video-hero--content .nav-pills {
+    width: 100% !important;
+  }
+}
 .video-hero--content .form-group{
   position: relative;
 }
@@ -921,7 +934,9 @@ header .carousel-indicators {
 }
 
 .nav-breadcrumb .breadcrumb-item.active {
-  color: #0050A3;
+  color: #0050A3;}
+.about .jquery-background-video-wrapper {
+  border-radius: 20px;
 }
 #about-us {
   padding: 60px 0;
@@ -999,6 +1014,7 @@ header .carousel-indicators {
   /* font-style: italic; */
   text-align: center;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .slid_about #graphics {
@@ -1220,7 +1236,7 @@ footer .footer-content li a{
   width: 120px;
 }
 .copyrights span{
-  color: #fff;
+  /* color: #fff; */
   font-size: small;
 }
 .router-link {
@@ -1261,37 +1277,40 @@ footer .footer-content li a{
   border-radius: 20px;
 }
 #ul-parent li{
-position: absolute;
-width: 80%;
-left: 10%;
-animation-name: slider;
-animation-duration: 20s;
-animation-iteration-count: infinite; 
-box-shadow: 1px 1px 13px #0000001c;
-border-radius: 15px;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  animation-name: slider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; 
+  box-shadow: 1px 1px 13px #0000001c;
+  border-radius: 15px;
+  background-color: #fff;
 }
 #ul-parent li:nth-child(1){
-transform: translateX(0);
-animation-delay: -20s;
+  transform: translateX(0);
+  animation-delay: -20s;
 }
 #ul-parent li:nth-child(2){
-transform: translateX(550px) translateZ(-300px) rotateY(30deg);
-animation-delay: -15S;
+  transform: translateX(550px) translateZ(-300px) rotateY(30deg);
+  animation-delay: -15S;
 }
 #ul-parent li:nth-child(3){
-transform:translateZ(-500px);
-animation-delay: -10S;
+  transform:translateZ(-500px);
+  animation-delay: -10S;
 }
 #ul-parent li:nth-child(4){
-transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
-animation-delay: -5S;
+  transform: translateX(-550px) translateZ(-300px) rotateY(-30deg);
+  animation-delay: -5S;
 }
 #ul-parent .card-title{
-  margin-top: 1rem !important;
+  margin-top: 2rem !important;
   color: #0050A3;
 }
 #ul-parent  p{
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  color: var(--gray-color);
+  padding-bottom: 2.5rem;
 }
 @keyframes slider{
 0%,20%{
@@ -1598,3 +1617,10 @@ div:nth-child(3n + 1) > img {
    
 }
 }
+
+
+
+
+
+/* services */
+
