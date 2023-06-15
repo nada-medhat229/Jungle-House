@@ -28,11 +28,7 @@ body {
   overflow-x: hidden;
   direction: rtl;
   /* background: #020204; */
-<<<<<<< HEAD
   background-color:#FCFFFF!important;
-=======
-  background-color: #FCFFFF !important;
->>>>>>> fba4bcb0a895372a6d38569fe5297f2026e3c70b
   background-image: url('../images/bg-effect.svg') !important;
   /* background: url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg) !important; */
   animation: stars 90s linear;
