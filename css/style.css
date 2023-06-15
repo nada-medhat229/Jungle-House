@@ -920,6 +920,7 @@ header .carousel-indicators {
 .about .list:nth-child(2n) .icon{
   background: var(--secon-color);
 }
+
 .about .list .icon+ div h6{
   color: #2E2E2E;
   font-weight: bold;
