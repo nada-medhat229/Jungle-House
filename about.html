@@ -51,22 +51,56 @@
   </head>
 
   <body>
- <!-- ======= breadcrumb ======= -->
- <div class="container">
 
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
-           <h3 class="text-end wow animate__fadeInDown">من نحن؟</h3>
-        <ol class="breadcrumb wow animate__fadeInLeft">
-          <li class="breadcrumb-item">
-            <a href="in">الصفحة الرئيسية</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">من نحن؟</li>
-        </ol>
-      </nav>
- </div>
+    <!-- ============ navbar ============ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="" class="navbar-brand" width="100px">
+        </a>
+        <div class="">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>الرئيسية</li></a>
+              <a href="about.html"><li>من نحن ؟</li></a>
+              <a href="#"><li>الخدمات</li></a>
+              <a href="blog.html"><li>المقالات</li></a>
+              <a href="#"><li>الأخبار</li></a>
+              <a href="#"><li>تواصل معنا</li></a>
+              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <a href="#"><li>تسجيل كمقدم خدمة</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on"></span>
+            <span class="off"></span>
+          </div>
+          <span>EN</span>
+        </div>
+      </div>
+    </nav>
 
+    <!-- ======= breadcrumb ======= -->
+    <div class="container">
+        <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
+          <h3 class="text-end wow animate__fadeInDown">من نحن؟</h3>
+          <ol class="breadcrumb wow animate__fadeInLeft">
+            <li class="breadcrumb-item">
+              <a href="in">الصفحة الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">من نحن؟</li>
+          </ol>
+        </section>
+    </div>
 
-   
     <section class="about mt-0">
       <div class="container">
         <section class="position-relative">
@@ -177,8 +211,8 @@
           <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay="0s">
             <h5>خريطة الموقع</h5>
             <ul>
-              <li><a href="">الرئيسية</a></li>
-              <li><a href="./about.html"> من نحن</a></li>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html"> من نحن</a></li>
               <li><a href="">الخدمات </a></li>
               <li><a href="">العروض</a></li>
             </ul>
@@ -187,7 +221,7 @@
             <h5>روابط أخرى</h5>
             <ul>
               <li><a href="">الأخبار</a></li>
-              <li><a href="">المدونة</a></li>
+              <li><a href="blog.html">المدونة</a></li>
               <li><a href=""> المعرض</a></li>
             </ul>
           </div>
@@ -251,50 +285,20 @@
     <!-- custom script -->
     <script src="js/script.js"></script>
     <script>
+      $(document).ready(function () {
+        $('.jquery-background-video').bgVideo({fadeIn: 2000});
+        var navbar = document.getElementsByTagName("nav");
+        var sticky = navbar[0].offsetHeight ;
 
-        $(document).ready(function () {
-            $('.jquery-background-video').bgVideo({fadeIn: 2000});
-            var navbar = document.getElementsByTagName("nav");
-            var sticky = navbar[0].offsetHeight ;
-    
-            // make nav bar static on scroll 
-            window.addEventListener("scroll" , function(){
-              if (this.document.documentElement.scrollTop >= sticky) {
-                $(navbar).css("background" , "#fff");
-              } else {
-                $(navbar).css("background" , "transparent");
-              }
-            })
-          })
-          
-          class Defilee {
-      constructor(element) {
-        if (!element) {
-          return;
-        }
-        this.element = element;
-        this._name = "defilee";
-        this._itemSelector = "." + this._itemClass;
-      }
-      init() {
-        this.addLoop();
-      }
-      addLoop() {
-        const parent = this.element;
-        Array.prototype.slice
-          .call(this.element.children)
-          .reverse()
-          .forEach((el) => {
-            const clone = el.cloneNode(true);
-            clone.classList.add("clone");
-            parent.insertBefore(clone, parent.firstChild);
-          });
-      }
-    }
-    
-    const defilee = new Defilee(document.getElementById("defilee"));
-    defilee.init();
-    
-        </script>
+        // make nav bar static on scroll 
+        window.addEventListener("scroll" , function(){
+          if (this.document.documentElement.scrollTop >= sticky) {
+            $(navbar).css("background" , "#fff");
+          } else {
+            $(navbar).css("background" , "transparent");
+          }
+        })
+      })
+    </script>
   </body>
 </html>
