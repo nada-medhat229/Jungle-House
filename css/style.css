@@ -1862,7 +1862,11 @@ footer .footer-content li a{
 }
 
 /* ----------- product-details --------------- */
-
+.single-img{
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 390px;
+}
 .product-details .product-preview{
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -1988,7 +1992,11 @@ footer .footer-content li a{
   padding: 15px;
   font-size: 15px;
 }
-
+.most-wanted-headline h5{
+  font-weight: bold;
+  text-align: start;
+  font-size: 24px;
+}
 
 @keyframes floating {
   0% {
