@@ -71,7 +71,15 @@
               <a href="#"><li>المقالات</li></a>
               <a href="#"><li>الأخبار</li></a>
               <a href="#"><li>تواصل معنا</li></a>
-              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <!-- Button trigger modal -->
+
+
+
+             <li>
+                <button type="button" class="bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              تسجيل كمستخدم
+                </button>
+              </li>
               <a href="#"><li>تسجيل كمقدم خدمة</li></a>
             </ul>
           </div>
@@ -630,8 +638,298 @@
         </div>
       </div>
     </footer>
+   
+   
 
+<div class="about-login">
+  <!-- Modal -->
+<div class="login-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="text-center header-links">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+        تسجيل الدخول
+              
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+             
+                إنشاء حساب
+            </button>
+          </li>
+         
+        </ul>
+    
+      
+      </div>
+     
+   
+      <div class="modal-body">
+        <div class="login">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="login-box">
+                <div class="text-center py-2">
+                  <span class="wel py-2">مرحبًا بك</span>
+          
+                  <h3 class="reg py-4">
+                    الدخول إلى ملفك الشخصي
+                  </h3>
+                </div>
+              
+              <form>
+                  <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">البريد الإلكتروني </label>
+                      <input type="email" class="form-control mt-0" >
+                    </div>
+                    <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">كلمة السر </label>
+                      <input type="password" class="form-control mt-0" >
+                    </div>
+                 
+                    <div>
+                      <button type="button" class="bg-transparent forget" data-bs-toggle="modal" data-bs-target="#exampleModalPass">هل نسيت كلمة المرور؟
+                      </button>
+                    </div>
+                  <button type="submit" href="#" class="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    دخول
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
+              <div class="login-box">
+                <div class="text-center py-2">
+                  <span class="wel py-2">مرحبًا بك</span>
+          
+                  <h3 class="reg py-4">
+                    إنشاء حساب جديد
+                  </h3>
+                </div>
+              
+              <form>
+                  <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">اسم المستخدم  </label>
+                      <input type="text" class="form-control mt-0" >
+                    </div>
+                    <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">البريد الإلكتروني </label>
+                      <input type="email" class="form-control mt-0" >
+                    </div>
+                    <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">الرقم السري  </label>
+                      <input type="password" class="form-control mt-0" >
+                    </div>
+                    <div class="mb-3 user-box">
+                      <label  class="form-label mb-0 pb-0">تأكيد الرقم السري   </label>
+                      <input type="password" class="form-control mt-0" >
+                    </div>
+                 
+                  <button type="submit" href="#" class="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    دخول
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+             
+        
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="login-modal modal fade" id="exampleModalPass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content pb-5 ">
+   
+      <div class="modal-body pb-5">
+        <div class="login-box">
+          <div class="text-center py-2">
+            <span class="wel py-2">هل نسيت الرقم السري الخاص بك ؟ </span>
+    
+            <h4 class="reg py-4">
+
+              ادخل البريد الإلكتروني الخاص بك وسيتم إرسال كود لاستعادة الرقم السري            
+            </h4>
+          </div>
+        
+        <form>
+        
+              <div class=" user-box py-2">
+                <label  class="form-label mb-0 pb-0">البريد الإلكتروني </label>
+                <input type="email" class="form-control mt-0" >
+              </div>
+         
+                <button type="button" class=" submit" data-bs-toggle="modal" data-bs-target="#codePass">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  دخول
+                </button>
+      
+           
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="login-modal modal fade" id="codePass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content py-5 ">
+   
+      <div class="modal-body py-5">
+        <div class="login-box py-5">
+          <div class="text-center py-2">
+            <span class="wel py-2">
+              تم إرسال رمز التحقق
+             </span>
+    
+            <h6 class="text-muted py-4">
+              ادخل رمز التحقق المرسل على بريدك الإلكتروني
+            </h6>
+          </div>
+        
+        <form>
+        
+              <div class=" user-box py-3 d-flex justify-content-between">
+                <input type="number" class="form-control m-1" >
+                <input type="number" class="form-control m-1" >
+                <input type="number" class="form-control m-1" >
+                <input type="number" class="form-control m-1" >
+             
+              </div>
+         
+              <button type="button" class=" submit" data-bs-toggle="modal" data-bs-target="#newPass">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  استمرار
+                </button>
+      
+           
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<div class="login-modal modal fade" id="newPass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content py-5 ">
+   
+      <div class="modal-body py-5">
+        <div class="login-box py-5">
+          <div class="text-center py-2">
+           
+    
+            <h6 class="py-4">
+              <span class="wel py-2 fw-bold">
+                كتابة رقم سري جديد
+
+               </span>
+            </h6>
+          </div>
+        
+        <form>
+        
+          <div class="mb-3 user-box">
+            <label  class="form-label mb-0 pb-0">الرقم السري  </label>
+            <input type="password" class="form-control mt-0" >
+          </div>
+          <div class="mb-3 user-box">
+            <label  class="form-label mb-0 pb-0">تأكيد الرقم السري  </label>
+            <input type="password" class="form-control mt-0" >
+          </div>
+         
+              <button type="button" class=" submit" >
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  دخول
+                </button>
+      
+           
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
+<div class="aboutregist-user">
+  <!-- Modal -->
+<div class="login-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+   
+      <div class="modal-body">
+        <div class="login">
+        
+          <div class="login-box">
+            <div class="text-center py-2">
+              <span class="wel py-2">مرحبًا بك</span>
+      
+              <h3 class="reg py-4">
+                تسجيل كمقدم خدمة
+              </h3>
+            </div>
+          
+          <form>
+              <div class="mb-3 user-box">
+                <div class="mb-3 user-box">
+                  <label  class="form-label mb-0 pb-0">اسم المستخدم  </label>
+                  <input type="text" class="form-control mt-0" >
+                </div>
+                  <label  class="form-label mb-0 pb-0">البريد الإلكتروني </label>
+                  <input type="email" class="form-control mt-0" >
+                </div>
+              
+             
+                <div>
+                  <button type="button" class="bg-transparent forget" data-bs-toggle="modal" data-bs-target="#exampleModalPass">هل نسيت كلمة المرور؟
+                  </button>
+                </div>
+              <button type="submit" href="#" class="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                دخول
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
