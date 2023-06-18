@@ -102,6 +102,8 @@ $(document).ready(function () {
   // --------
 
   // map
+$('.multi-select').select2();
+
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZWRrZiIsImEiOiJjamM2b2U4bDcwMm1tMndvNzI5dHQ1eTJtIn0.Ri6t-PZg3i5wivNlLehzVg';
   // These options control the camera position after animation
   const start = {
