@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- owl carousel link  -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+  <!-- rateYo link  -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+  <!-- fancyBox link  -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+  <link rel="stylesheet" href="css/nice-select.css" />
+
+  <!-- animate link  -->
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/jquery.background-video.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+
+  <link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/style_ltr.css " /> -->
+</head>
+
+<body>
+  <!-- ============ navbar ============ -->
+  <nav>
+    <div class="container">
+      <a href="index.html">
+        <img src="images/logo.svg" alt="" class="navbar-brand" width="100px" />
+      </a>
+      <div class="">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html">
+              <li>الرئيسية</li>
+            </a>
+            <a href="about.html">
+              <li>من نحن ؟</li>
+            </a>
+            <a href="services.html">
+              <li>الخدمات</li>
+            </a>
+            <a href="blog.html">
+              <li>المقالات</li>
+            </a>
+            <a href="news.html">
+              <li>الأخبار</li>
+            </a>
+            <a href="contactUs.html">
+              <li>تواصل معنا</li>
+            </a>
+            <a href="#">
+              <li>تسجيل كمستخدم</li>
+            </a>
+            <a href="#">
+              <li>تسجيل كمقدم خدمة</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="lang">
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+          <label for="language-toggle"></label>
+          <span class="on"></span>
+          <span class="off"></span>
+        </div>
+        <span>EN</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= breadcrumb ======= -->
+  <div class="container">
+    <section style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="nav-breadcrumb">
+      <h3 class="text-end wow animate__fadeInDown">مقدم الخدمة</h3>
+      <ol class="breadcrumb wow animate__fadeInLeft">
+        <li class="breadcrumb-item">
+          <a href="in">الصفحة الرئيسية</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">مقدم الخدمة</li>
+      </ol>
+    </section>
+  </div>
+
+
+  <!------------- profile -------------->
+  <section class="profile py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-start">
+
+        <!-- profile nav-sm -->
+        <div class="profile-nav-sm rounded-3">
+          <p class="m-0">الملف الشخصي</label>
+          <img src="images/Group 67653.png" class="btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="">
+          <!-- nav-items -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <!-- title -->
+              <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <!-- المعلومات الشخصية -->
+                <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info"
+                  aria-selected="true">
+                  بياناتي
+                </button>
+
+                <!-- تعديل كلمة المرور -->
+                <button class="nav-link" id="v-pills-pass-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pass"
+                  type="button" role="tab" aria-controls="v-pills-pass" aria-selected="false">تعديل كلمة المرور
+                </button>
+
+                <!-- المفضلة -->
+                <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav"
+                  type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
+                </button>
+
+                <!-- المقارنة -->
+                <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare"
+                  aria-selected="false">المقارنة
+                </button>
+
+                <!-- حجوزاتي -->
+                <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reservation"
+                  type="button" role="tab" aria-controls="v-pills-reservation" aria-selected="false">حجوزاتي
+                </button>
+              </div>
+              <!--profile log out button -->
+              <div class="d-grid gap-2">
+                <button class="log-out btn btn-primary mt-1" type="button">تسجيل الخروج
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- profile nav-lg col -->
+        <div class="profile-nav col col-md-5 col-lg-3">
+          <!-- profile-picture -->
+          <div class="profile-pic position-relative bg-light">
+            <img class="w-100 h-100" src="images/bicycles.png" alt="" id="photo">
+            <div class="profile-pic-icon">
+              <i class="bi bi-camera-fill"></i>
+            </div>
+            <input type="file" id="file" name="profile-pic" accept="image/*">
+          </div>
+          <!-- profile nav -->
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <!-- المعلومات الشخصية -->
+            <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info"
+              type="button" role="tab" aria-controls="v-pills-info" aria-selected="true">بياناتي
+              <i class="bi bi-person"></i>
+            </button>
+            <!-- تعديل كلمة المرور -->
+            <button class="nav-link" id="v-pills-pass-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pass"
+              type="button" role="tab" aria-controls="v-pills-pass" aria-selected="false">تعديل كلمة المرور
+              <i class="bi bi-geo-alt"></i>
+            </button>
+            <!-- المفضلة -->
+            <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fav"
+              type="button" role="tab" aria-controls="v-pills-fav" aria-selected="false">المفضلة
+              <i class="bi bi-heart"></i>
+            </button>
+            <!-- المقارنة -->
+            <button class="nav-link" id="v-pills-compare-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-compare" type="button" role="tab" aria-controls="v-pills-compare"
+              aria-selected="false">المقارنة
+              <i class="bi bi-cart3"></i>
+            </button>
+            <!-- حجوزاتي -->
+            <button class="nav-link" id="v-pills-reservation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reservation"
+            type="button" role="tab" aria-controls="v-pills-reservation" aria-selected="false">حجوزاتي
+          </button>
+          </div>
+        </div>
+
+        <!-- profile data col -->
+        <div class="profile-data col col-md-7 col-lg-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <!-- المعلومات الشخصية -->
+            <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+              <h4 class="tab-title">المعلومات الشخصية</h4>
+              <form action="">
+                <div class="row gy-3">
+                  <!-- الاسم -->
+                  <div class="col-12">
+                    <label>اسم المستخدم</label>
+                    <input class="form-control" type="text" placeholder="اسم المستخدم يكتب هنا">
+                  </div>
+                  <!-- البريد الالكتروني -->
+                  <div class="col-12">
+                    <label>البريد الالكتروني</label>
+                    <input class="form-control" type="email" placeholder="EX . Sales@domainname.com">
+                  </div>
+                </div>
+                <button type="button" class="btn send rounded mt-5">تعديل</button>
+              </form>
+            </div>
+
+            <!-- تعديل كلمة المرور -->
+            <div class="tab-pane fade" id="v-pills-pass" role="tabpanel" aria-labelledby="v-pills-pass-tab">
+              <h4 class="tab-title">تعديل كلمة المرور</h4>
+              <form action="">
+                <div class="row gy-3">
+                  <div class="col-12">
+                    <label>كلمة المرور الحالية</label>
+                    <input class="form-control" type="password" placeholder="كلمة المرور الحالية">
+                  </div>
+                  <div class="col-12">
+                    <label>كلمة مرور جديدة</label>
+                    <input class="form-control" type="password" placeholder="كلمة مرور جديدة">
+                  </div>
+                  <div class="col-12">
+                    <label>تأكيد كلمة المرور</label>
+                    <input class="form-control" type="password" placeholder="تأكيد كلمة المرور">
+                  </div>
+                </div>
+                <button type="button" class="btn send rounded mt-5">تعديل</button>
+              </form>
+            </div>
+
+            <!-- المفضلة -->
+            <div class="tab-pane fade" id="v-pills-fav" role="tabpanel" aria-labelledby="v-pills-fav-tab">
+              ...
+            </div>
+
+            <!-- المقارنة -->
+            <div class="tab-pane fade" id="v-pills-compare" role="tabpanel" aria-labelledby="v-pills-compare-tab">
+              ...
+            </div>
+            <!-- حجوزاتي -->
+            <div class="tab-pane fade" id="v-pills-reservation" role="tabpanel" aria-labelledby="v-pills-reservation-tab">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ footer ============ -->
+  <footer>
+    <div class="container footer-content">
+      <button id="scroll-top"><i class="bi bi-chevron-double-up"></i></button>
+      <div class="links row gx-5 justify-content-evenly">
+        <div class="col-12 mb-5">
+          <div class="logo text-center">
+            <img src="images/logo-footer.png" class="wow animate__fadeInRightBig" data-wow-duration="1s" alt="" />
+          </div>
+          <div class="social-media mt-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="icon">
+              <a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="router-link">
+              </a>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+              <a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="router-link">
+              </a>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <a aria-label="linkedin" href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8" target="_blank"
+                class="router-link">
+              </a>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay="0s">
+          <h5>خريطة الموقع</h5>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html"> من نحن</a></li>
+            <li><a href="services.html">الخدمات </a></li>
+            <li><a href="offers.html">العروض</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".3s">
+          <h5>روابط أخرى</h5>
+          <ul>
+            <li><a href="news.html">الأخبار</a></li>
+            <li><a href="blog.html">المدونة</a></li>
+            <li><a href="gallery.html"> المعرض</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-auto wow animate__fadeInTopRight" data-wow-duration="1s" data-wow-delay=".6s">
+          <h5>روابط المساعدة</h5>
+          <ul>
+            <li><a href="">سياسة الخصوصية</a></li>
+            <li><a href="">الشروط والأحكام</a></li>
+            <li><a href=""> الأسئلة الشائعة</a></li>
+            <li><a href="contactUs.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights">
+      <div class="container">
+        <a href="https://smartvision4p.com" target="_blank">
+          <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
+          <img src="images/smart-logo.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery script -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- owl carousel script -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- fancyBox script -->
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <!-- rateYo script -->
+  <script src="js/jquery.rateyo.min.js"></script>
+
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
+
+  <script src="js/jquery.background-video.js"></script>
+
+  <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+
+  <!-- wow script -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- font awesome script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- custom script -->
+  <script src="js/script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".jquery-background-video").bgVideo({ fadeIn: 2000 });
+      var navbar = document.getElementsByTagName("nav");
+      var sticky = navbar[0].offsetHeight;
+
+      // make nav bar static on scroll
+      window.addEventListener("scroll", function () {
+        if (this.document.documentElement.scrollTop >= sticky) {
+          $(navbar).css("background", "#fff");
+        } else {
+          $(navbar).css("background", "transparent");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

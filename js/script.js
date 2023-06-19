@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  $('select').niceSelect();
+  if($('select').length>0){
+    $('select').niceSelect();
+  }
   $('.jquery-background-video').bgVideo({fadeIn: 2000});
 
   // sev
@@ -161,8 +163,48 @@ $(document).ready(function () {
     })
   }
   // ------
+  $(function () {
+    if($("#your-rate").length>0){
+      $("#your-rate").rateYo({
+        starWidth: "15px",
+        ratedFill: "#FFC107",
+        rating: 0,
+        fullStar: true,
+        rtl: true
+      });
+    }
+    
+    if($("#your-rate-provider").length>0){
+      $("#your-rate-provider").rateYo({
+        starWidth: "15px",
+        ratedFill: "#FFC107",
+        rating: 0,
+        fullStar: true,
+        rtl: true
+      }); 
+    }
+  })
   //loader
   setTimeout(function () {$(".loader").fadeOut(1000);})
+
+    //when we choose a pic to upload
+
+    if($('#photo').length>0){
+      const img = document.querySelector('#photo');
+      const file = document.querySelector('#file');
+    
+      file.addEventListener('change', function(){
+        const choosedFile = this.files[0];
+        if (choosedFile) {
+            const reader = new FileReader(); 
+            reader.addEventListener('load', function(){
+                img.setAttribute('src', reader.result);
+            });
+            reader.readAsDataURL(choosedFile);
+        }
+      });
+    }
+  
 
   // carousel
   $('.partners .owl-carousel').owlCarousel({
@@ -220,7 +262,6 @@ $(document).ready(function () {
       },
     },
   });
-
   
 });
   if($('.gallery-link').length>0){

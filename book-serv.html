@@ -79,7 +79,7 @@
               <a href="blog.html"><li>المقالات</li></a>
               <a href="news.html"><li>الأخبار</li></a>
               <a href="contactUs.html"><li>تواصل معنا</li></a>
-              <a href="#"><li>تسجيل كمستخدم</li></a>
+              <a href="login.html"><li>تسجيل كمستخدم</li></a>
               <a href="#"><li>تسجيل كمقدم خدمة</li></a>
             </ul>
           </div>
@@ -102,80 +102,70 @@
 
     <!-- ======= breadcrumb ======= -->
     <div class="container">
-      <section
-        style="--bs-breadcrumb-divider: '>'"
-        aria-label="breadcrumb"
-        class="nav-breadcrumb"
-      >
-        <h3 class="text-end wow animate__fadeInDown">تواصل معنا</h3>
+      <section style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="nav-breadcrumb">
+        <h3 class="text-end wow animate__fadeInDown">الخدمات</h3>
         <ol class="breadcrumb wow animate__fadeInLeft">
           <li class="breadcrumb-item">
-            <a href="in">الصفحة الرئيسية</a>
+            <a href="index.html">الصفحة الرئيسية</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">تواصل معنا</li>
+          <li class="breadcrumb-item">
+            <a href="services.html">الخدمات</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">اسم الخدمة</li>
         </ol>
       </section>
     </div>
-   <!-- contact us -->
-  
-  <section class="contact py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-12 mb-2">
-          <div class="card text-center p-4 wow animate__fadeInRight">
-            <i class="bi fa-solid fa-location-dot"></i>
-        
-            <h4 class="pt-2 pb-3">العنوان</h4>
-            <p>
-              <a href=""> العنوان يكتب هنا </a>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mb-2">
-          <div class="card text-center p-4 wow animate__fadeInDown">
-            <i class="bi fa-solid fa-phone"></i>
-            <h4 class="pt-2 pb-3">رقم الهاتف</h4>
-            <p><a href="tel:+201565985648521">+201565985648521 </a></p>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mb-2">
-          <div class="card text-center p-4 wow animate__fadeInLeft">
-            <i class="bi fa-regular fa-envelope"></i>
-            <h4 class="pt-2 pb-3">البريد الإلكتروني</h4>
-            <p>
-              <a href=""> العنوان يكتب هنا </a>
-            </p>
-          </div>
-        </div>
+
+    <!-- contact us -->
+    <div class="book">
+      <div class="container">
+        <form action="">
+          <section class="contact">
+            <div class="row gy-3 justify-content-evenly">
+              <div class="col-md-6 col-12 wow animate__fadeInRight" data-wow-delay=".2s">
+                <label for="">الخدمة الأساسية</label>
+                <select name="" id="">
+                  <option value="">الخدمات الإدارية</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-12 wow animate__fadeInLeft" data-wow-delay=".4s">
+                <label for="">الخدمة الفرعية</label>
+                <select name="" id="">
+                  <option value="">تأجير دراجة</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-12 wow animate__fadeInUp" data-wow-delay="0.6s">
+                <label for="">من تاريخ</label>
+                <input class="form-control" type="date" name="" id="">
+              </div>
+              <div class="col-md-6 col-12 wow animate__fadeInUp" data-wow-delay="0.8s">
+                <label for="">الى تاريخ</label>
+                <input class="form-control" type="date" name="" id="">
+              </div>
+              <div class="col-md-12 col-12 wow animate__fadeInUp" data-wow-delay="1s">
+                <label for="">الساعة</label>
+                <input class="form-control" type="time" name="" id="">
+              </div>
+              <div class="col-md-6 col-12 wow animate__fadeInUp" data-wow-delay="1.2s">
+                <label for="">عدد الأفراد </label>
+                <input class="form-control" type="number" name="" id="" value="1" min="1"  max="20">
+              </div>
+              <div class="col-md-6 col-12 wow animate__fadeInUp" data-wow-delay="1.4s">
+                <label for="">عدد الأطفال </label>
+                <input class="form-control" type="number" name="" id="" value="1" min="1"  max="20">
+              </div>
+              <div class="col-md-6 col-lg-4 col-12 wow animate__jackInTheBox" data-wow-delay="1.6s">
+                <div class="total">
+                  <span>الإجمالي : </span>
+                  <span>225 ريال سعودي</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button class="btn-book">حجز</button>
+        </form>
       </div>
     </div>
-  </section>
-
-  <section class="contact py-5">
-      <div class="container">
-       <div class="row">
-          <h3 class="title-contact">
-              تواصل من خلال
-          </h3>
-          <form action="">
-              <div class="row pt-4 justify-content-evenly">
-                  <div class="col-md-6 col-12 wow animate__fadeInRight" data-wow-delay=".4s">
-                      <input type="text" class="form-control" placeholder="الإسم">
-                  </div>
-                  <div class="col-md-6 col-12 wow animate__fadeInLeft" data-wow-delay=".8s">
-                      <input type="email" class="form-control" placeholder="البريد الإلكتروني">
-                  </div>
-                  <div class="col-md-12 col-12 wow animate__fadeInUp" data-wow-delay="0.9s">
-                      <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="اكتب رسالتك هنا"></textarea>
-                  </div>
-                  <div class="col-md-4 col-12 wow animate__jackInTheBox" data-wow-delay="1s">
-                      <input type="submit" class="form-control send-contact" value="ارسال" >
-                  </div>
-              </div>
-          </form>
-       </div>
-      </div>
-    </section>
     <!-- ============ footer ============ -->
     <footer>
       <div class="container footer-content">
@@ -237,7 +227,7 @@
               <li><a href="index.html">الرئيسية</a></li>
               <li><a href="about.html"> من نحن</a></li>
               <li><a href="services.html">الخدمات </a></li>
-              <li><a href="offers.html">العروض</a></li>
+              <li><a href="">العروض</a></li>
             </ul>
           </div>
           <div
@@ -292,8 +282,8 @@
     <!-- rateYo script -->
     <script src="js/jquery.rateyo.min.js"></script>
 
-    <script src="js/jquery.nice-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
 
     <script src="js/jquery.background-video.js"></script>
